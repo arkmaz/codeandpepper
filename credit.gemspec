@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary       = "Coding exercise for job interview"
   spec.description   = "Coding exercise for job interview"
   spec.homepage      = "http://github.com"
-  spec.required_ruby_version = Gem::Requirement.new(">= 2.7.1")
+  spec.required_ruby_version = Gem::Requirement.new(">= 2.7.0")
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
