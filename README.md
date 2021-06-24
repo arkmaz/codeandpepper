@@ -1,6 +1,6 @@
 # Credit
 
-Welcome in our code exercise. You're in small group of chosen ones that we continue our job interview with! please take a look at this exercersise and feel free to do anything you would like to achive our goal.
+Welcome to our code exercise. You're in a small group of chosen ones that we continue our job interview with! Please take a look at this coding exercise and feel free to do anything you want to achieve the goal.
 
 ## Goal
 
@@ -39,13 +39,14 @@ So, validating credit card numbers isn’t hard, but it does get a bit tedious b
 
 ### Implementation Details
 
-In lib/credit/ directory write a program that validate credit card numbers base on describe above.
-Please feel free to use our first test and card class but you can implement it in any way you want.
-Please return VISA/AMEX/MASTERCARd if card number is correct or INVALID for not valida card number.
+In the `lib/credit/` directory there's a base program that validates credit card numbers using the described algorithm.
+Feel free to use our first tests and `Card` class but you can implement it in any way you want.
+Return `[VISA|AMEX|MASTERCARD]` if card number is correct or `INVALID` for... invalid number.
 Please remember first to check whether the user’s input is indeed a sequence of digits of the correct length, you can get rid of hyphens if in the string.
-Then check card number.
+Then check the card number.
 
-This are some other card numbers you can use:
+Here are some other card numbers you can use:
+
 - 378282246310005 AMEX
 - 371449635398431 AMEX
 - 5555555555554444 MASTERCARD
@@ -53,3 +54,5 @@ This are some other card numbers you can use:
 - 4111111111111111 VISA
 - 4012888888881881 VISA
 - 1234567890 INVALID
+
+Good luck and have fun!
