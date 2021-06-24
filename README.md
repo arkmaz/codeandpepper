@@ -22,18 +22,18 @@ Multiply every other digit by 2, starting with the number’s second-to-last dig
 Add the sum to the sum of the digits that weren’t multiplied by 2.
 If the total’s last digit is 0 (or, put more formally, if the total modulo 10 is congruent to 0), the number is valid!
 
-That’s kind of confusing, so let’s try an example of Visa: 4003600000000014.
+That’s kind of confusing, so let’s try an example of Visa: `4003600000000014`.
 - For the sake of discussion, let’s first bold every other digit, starting with the number’s second-to-last digit:
-**4**0**0**3**6**0**0**0**0**0**0**0**0**0**1**4
-- Okay, let’s multiply each of the bold digits by 2:
-1•2 + 0•2 + 0•2 + 0•2 + 0•2 + 6•2 + 0•2 + 4•2
+`**4**0**0**3**6**0**0**0**0**0**0**0**0**0**1**4`
+- Okay, let’s multiply each of the bold digits by `2`:
+`1•2 + 0•2 + 0•2 + 0•2 + 0•2 + 6•2 + 0•2 + 4•2`
 - That gives us:
-2 + 0 + 0 + 0 + 0 + 12 + 0 + 8
+`2 + 0 + 0 + 0 + 0 + 12 + 0 + 8`
 - Now let’s add those products’ digits (i.e., not the products themselves) together:
-2 + 0 + 0 + 0 + 0 + 1 + 2 + 0 + 8 = 13
-- Now let’s add that sum (13) to the sum of the digits that weren’t multiplied by 2 (starting from the end):
-13 + 4 + 0 + 0 + 0 + 0 + 0 + 3 + 0 = 20
-- Yup, the last digit in that sum (20) is a 0, so that visa card is legit!
+`2 + 0 + 0 + 0 + 0 + 1 + 2 + 0 + 8 = 13`
+- Now let’s add that sum (`13`) to the sum of the digits that weren’t multiplied by `2` (starting from the end):
+`13 + 4 + 0 + 0 + 0 + 0 + 0 + 3 + 0 = 20`
+- Yup, the last digit in that sum (`20`) is a `0`, so that visa card is legit!
 
 So, validating credit card numbers isn’t hard, but it does get a bit tedious by hand. Let’s write a program.
 
@@ -42,17 +42,18 @@ So, validating credit card numbers isn’t hard, but it does get a bit tedious b
 In the `lib/credit/` directory there's a base program which should be used to validate credit card numbers using the described algorithm.
 Feel free to use our first tests and `Card` class but you can implement it in any way you want.
 Return `[VISA|AMEX|MASTERCARD]` if card number is correct or `INVALID` for... invalid number.
+
 Please remember first to check whether the user’s input is indeed a sequence of digits of the correct length, you can get rid of hyphens if in the string.
 Then check the card number.
 
 Here are some other card numbers you can use:
 
-- 378282246310005 AMEX
-- 371449635398431 AMEX
-- 5555555555554444 MASTERCARD
-- 5105105105105100 MASTERCARD
-- 4111111111111111 VISA
-- 4012888888881881 VISA
-- 1234567890 INVALID
+- `378282246310005` AMEX
+- `371449635398431` AMEX
+- `5555555555554444` MASTERCARD
+- `5105105105105100` MASTERCARD
+- `4111111111111111` VISA
+- `4012888888881881` VISA
+- `1234567890` INVALID
 
 Good luck and have fun!
