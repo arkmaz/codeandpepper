@@ -39,7 +39,7 @@ So, validating credit card numbers isn’t hard, but it does get a bit tedious b
 
 ### Implementation Details
 
-In the `lib/credit/` directory there's a base program that validates credit card numbers using the described algorithm.
+In the `lib/credit/` directory there's a base program which should be used to validate credit card numbers using the described algorithm.
 Feel free to use our first tests and `Card` class but you can implement it in any way you want.
 Return `[VISA|AMEX|MASTERCARD]` if card number is correct or `INVALID` for... invalid number.
 Please remember first to check whether the user’s input is indeed a sequence of digits of the correct length, you can get rid of hyphens if in the string.
