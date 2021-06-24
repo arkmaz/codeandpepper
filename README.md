@@ -57,3 +57,10 @@ Here are some other card numbers you can use:
 - `1234567890` INVALID
 
 Good luck and have fun!
+
+### Code structure
+
+This task exists in different flavours:
+
+- regular, you are given the base structure of the app and your task is to fix/modify/extend it as much as you can
+- extended, you are given just this readmy and world is yours. In this case you have to decide the form and then adjust your decision when interrogated (-:
