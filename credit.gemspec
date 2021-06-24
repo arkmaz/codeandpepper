@@ -5,7 +5,7 @@ require_relative "lib/credit/version"
 Gem::Specification.new do |spec|
   spec.name          = "credit"
   spec.version       = Credit::VERSION
-  spec.authors       = ["code and pepper"]
+  spec.authors       = ["Code and Pepper"]
   spec.email         = ["z.lekki@codeandpepper.com"]
 
   spec.summary       = "Coding exercise for job interview"
