@@ -12,4 +12,17 @@ require "credit"
 # Pry.start
 
 require "irb"
+
+while true
+  puts "\nPlease provide your credit card number (or `exit`): "
+  card_nr = gets.chomp
+  exit if card_nr == "exit"
+  begin
+    puts Credit::Card.new.validate card_nr
+  rescue Credit::Error => e
+    puts e
+  end
+
+end
+
 IRB.start(__FILE__)
